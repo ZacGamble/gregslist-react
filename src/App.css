@@ -1,9 +1,20 @@
+.anchors {
+  color: white;
+
+}
+
+.anchor-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100px;
   pointer-events: none;
 }
 
@@ -15,12 +26,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -32,7 +40,26 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.fab {
+  position: fixed;
+  z-index: 3;
+  right: 2em;
+  bottom: 2em;
+}
+
+.home {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+.img-fit {
+  object-fit: cover;
+  height: 20rem;
 }
